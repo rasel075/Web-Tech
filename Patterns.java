@@ -250,5 +250,41 @@ public class Patterns {
             IO.println(); 
             //i can learn github
         }
+
+     IO.println("......  Hollow Right Pascal Triangle.....\n\n");
+      for(row=0;row<n;row++){
+              
+        for(col=row;col<n-1;col++){
+            IO.print(" ");
+        }
+        for(col=0;col<=row;col++){
+             if(col==row||  col+row==row)
+               IO.print("*");
+            else 
+                IO.print(" "); 
+             
+        }
+        
+        IO.println();
+      } 
+
+      
+
+      for(row=n-1;row>0;row--){
+              
+        for(col=row;col<n;col++){
+            IO.print(" ");
+        }
+        for(col=0;col<row;col++){
+             if(col+1==row||  col==0)
+               IO.print("*");
+            else 
+                IO.print(" "); 
+             
+        }
+        
+        IO.println();
+      } 
+
     }
 }
