@@ -7,11 +7,13 @@ public class NumBers {
         int row,col,c=0;
         for(row=0;row<n;row++)
         {
+            for(col=row;col<n-1;col++)
+            {
+                IO.print(" ");
+            }
             for(col=0;col<n;col++)
             {
-                if(row==0||row==n-1||col==0||col==n-1)
-                    IO.print(c+1);
-                else IO.print(0);
+                IO.print(col+1);
 
                 
             }
