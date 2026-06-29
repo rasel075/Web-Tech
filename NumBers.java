@@ -4,12 +4,14 @@ public class NumBers {
         Scanner input=new Scanner(System.in);
         IO.print("ENter a NumBer: ");
         int n=input.nextInt();
-        int row,col;
+        int row,col,c=0;
         for(row=n;row>0;row--)
         {
-            for(col=n;col>0;col--)
+            for(col=0;col<n;col++)
             {
-                IO.print(col);
+                c++;
+                IO.print((c)%2+" ");
+                
             }
             IO.println();
         }
