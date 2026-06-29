@@ -107,6 +107,52 @@ public class Patterns2 {
             
             IO.println();
         }
+          IO.println("\n\n\n");
+
+        for(row=n;row>0;row--){
+            for(col=row;col<n;col++)
+            {
+                IO.print(" ");
+            }
+            for(col=0;col<row;col++)
+            {
+                if(col==0 ||row==n)
+                System.out.print("*");
+            else IO.print(" ");
+            
+            }
+            for(col=1;col<row;col++)
+            {
+                if(col==row-1 ||row==n)
+                System.out.print("*");
+             else IO.print(" ");
+                
+            
+            }
+            
+            IO.println();
+        }
+        // IO.println("\n\n\n");
+        for(row=1;row<n;row++){
+            for(col=row;col<n-1;col++)
+            {
+                IO.print(" ");
+            }
+            for(col=0;col<=row;col++)
+            {
+                if(col==0||row==n-1)
+                System.out.print("*");
+            else IO.print(" ");
+            }
+            for(col=1;col<=row;col++)
+            {
+                if(col==row||row==n-1)
+                System.out.print("*");
+                else 
+                    IO.print(" ");
+            }
+            IO.println();
+        }
 
     }
 }
