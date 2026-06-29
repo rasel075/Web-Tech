@@ -9,7 +9,7 @@ public class NumBers {
         {
             for(col=0;col<n;col++)
             {
-                IO.print(row);
+                IO.print(col+1);
             }
             IO.println();
         }
