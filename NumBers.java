@@ -5,18 +5,21 @@ public class NumBers {
         IO.print("ENter a NumBer: ");
         int n=input.nextInt();
         int row,col,c=0;
-        for(row=0;row<n;row++)
+        for(row=n;row>0;row--)
         {
-            for(col=row;col<n-1;col++)
+           /*  c++;
+            for(col=row;col<n;col++)
             {
                 IO.print(" ");
-            }
+            } */
             for(col=0;col<n;col++)
             {
-                IO.print(col+1);
-
+                c++;
+                IO.print(c +""+ c);
                 
             }
+
+            c=0;
             IO.println();
         }
 
