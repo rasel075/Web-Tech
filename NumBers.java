@@ -7,9 +7,9 @@ public class NumBers {
         int row,col;
         for(row=n;row>0;row--)
         {
-            for(col=0;col<n;col++)
+            for(col=n;col>0;col--)
             {
-                IO.print(col+1);
+                IO.print(col);
             }
             IO.println();
         }
