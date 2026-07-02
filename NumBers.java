@@ -203,7 +203,50 @@ for(row=0;row<n;row++){
     }
     IO.println();
 } */
+///Inverted Twin Peaks of Numbers
+IO.println("\nTwin Peak\n");
+c=n;
+for(row=n;row>0;row--)
+{
+    
+     for(col=0;col<row;col++)
+        {
+            IO.print(c);
+            c--;
+        }
+        
+        for(col=0;col<2*(n-row)-1;col++){
+        IO.print(" ");
+    }
 
+    start=c+1;
+    if(start==1)start=2;
+     for(i=start;i<=n;i++)
+        {
+            IO.print(i);
+            
+        }
+        c=n;
+        IO.println();
+}
+/* IO.println("\nTwin Peak\n");
+c=n;
+for(row=n;row>0;row--)
+{
+    for(col=row;col<n;col++){
+        IO.print(" ");
+    }
+
+    
+     for(col=0;col<row;col++)
+        {
+            IO.print(c);
+            c--;
+        }
+        c=n;
+        IO.println();
+}
+ */
 
 
     }
