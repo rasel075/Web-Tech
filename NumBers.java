@@ -248,6 +248,28 @@ for(row=n;row>0;row--)
 }
  */
 
+//2.27. Alternating Columns in Square of Numbers
+
+for(row=0;row<n;row++)
+{
+
+
+    c=n;
+
+     for(col=0;col<n;col++)
+        {   if (row%2==0) {
+            IO.print(c);
+            c--;
+
+        }
+            
+            else IO.print(col+1);
+            
+        }
+        
+        IO.println();
+}
+    
 
     }
     
